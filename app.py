@@ -19,7 +19,6 @@ def check_password():
         """Verifica se a senha está correta"""
         # Hash da senha: "rh2025" (você pode mudar depois)
         # Para gerar novo hash: hashlib.sha256("sua_senha".encode()).hexdigest()
-        cript execution error
         correct_password_hash = "b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb9"
         entered_password = st.session_state["password"]
         entered_hash = hashlib.sha256(entered_password.encode()).hexdigest()
@@ -1491,6 +1490,7 @@ def show_backup_management(storage):
 
 if __name__ == "__main__":
     main()
+
 
 
 
