@@ -269,6 +269,10 @@ def setup_streamlit_app():
     """, unsafe_allow_html=True)
 
 def main():
+    # Verifica autenticação ANTES de mostrar qualquer coisa
+    if not check_password():
+        return
+    
     setup_streamlit_app()
     storage = MedicalStorage()
     
@@ -1487,3 +1491,4 @@ def show_backup_management(storage):
 
 if __name__ == "__main__":
     main()
+
