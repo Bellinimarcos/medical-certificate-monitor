@@ -9,6 +9,60 @@ from io import BytesIO
 import plotly.express as px
 import plotly.graph_objects as go
 import uuid
+import hashlib
+
+# Configuração de autenticação
+def check_password():
+    """Retorna True se o usuário inseriu a senha correta"""
+    
+    def password_entered():
+        """Verifica se a senha está correta"""
+        # Hash da senha: "rh2025" (você pode mudar depois)
+        # Para gerar novo hash: hashlib.sha256("sua_senha".encode()).hexdigest()
+        correct_password_hash = "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918"
+        
+        entered_password = st.session_state["password"]
+        entered_hash = hashlib.sha256(entered_password.encode()).hexdigest()
+        
+        if entered_hash == correct_password_hash:
+            st.session_state["password_correct"] = True
+            del st.session_state["password"]  # Remove a senha da sessão por segurança
+        else:
+            st.session_state["password_correct"] = False
+    
+    # Primeira execução ou senha não verificada
+    if "password_correct" not in st.session_state:
+        st.title("🔒 Acesso Restrito")
+        st.write("Sistema de Monitoramento de Atestados Médicos")
+        st.write("---")
+        st.text_input(
+            "Digite a senha de acesso:", 
+            type="password", 
+            on_change=password_entered, 
+            key="password"
+        )
+        st.info("💡 Senha padrão: **rh2025**")
+        st.caption("Entre em contato com o administrador se esqueceu a senha.")
+        return False
+    
+    # Senha incorreta
+    elif not st.session_state["password_correct"]:
+        st.title("🔒 Acesso Restrito")
+        st.write("Sistema de Monitoramento de Atestados Médicos")
+        st.write("---")
+        st.text_input(
+            "Digite a senha de acesso:", 
+            type="password", 
+            on_change=password_entered, 
+            key="password"
+        )
+        st.error("❌ Senha incorreta. Tente novamente.")
+        st.caption("Entre em contato com o administrador se esqueceu a senha.")
+        return False
+    
+    # Senha correta
+    else:
+        return True
 
 class MedicalStorage:
     """Sistema de armazenamento para dados de médicos e atestados"""
