@@ -156,46 +156,6 @@ def setup_streamlit_app():
     st.set_page_config(page_title="Gestão de Saúde & Riscos NR-1", page_icon="🏥", layout="wide")
     st.markdown("""<style>.main-header { font-size: 2.5rem; color: #1f77b4; text-align: center; margin-bottom: 2rem; }.metric-card { background-color: #f0f2f6; padding: 1rem; border-radius: 10px; border-left: 4px solid #1f77b4; }</style>""", unsafe_allow_html=True)
 
-# --- FUNÇÕES PRINCIPAIS DE TELA ---
-def main():
-    setup_streamlit_app()
-    storage = MedicalStorage()
-    
-    st.sidebar.title("🏥 Menu Principal")
-    
-    # --- SETUP DA API KEY DO GEMINI (AUTOMÁTICO APENAS) ---
-    # Verifica secrets.toml ou Variaveis de Ambiente do Sistema
-    api_key_configured = False
-    
-    if "GEMINI_API_KEY" in st.secrets:
-        os.environ["GEMINI_API_KEY"] = st.secrets["GEMINI_API_KEY"]
-        api_key_configured = True
-    elif os.environ.get("GEMINI_API_KEY"):
-        api_key_configured = True
-        
-    if api_key_configured:
-        st.sidebar.success("🔐 IA Ativada (Sistema)")
-    else:
-        st.sidebar.warning("⚠️ IA não configurada (Verifique secrets.toml)")
-    
-    st.sidebar.markdown("---")
-    
-    page = st.sidebar.radio("Navegação:", [
-        "📊 Dashboard", 
-        "🤖 Análise IA (Relatórios)",
-        "📝 Registrar Atendimento", 
-        "👨‍⚕️ Gerenciar Médicos", 
-        "👥 Cadastrar Funcionário", 
-        "💾 Backup & Exportar"
-    ])
-    
-    if page == "📊 Dashboard": show_dashboard(storage)
-    elif page == "🤖 Análise IA (Relatórios)": show_ai_analysis(storage)
-    elif page == "📝 Registrar Atendimento": show_attendance_registration(storage)
-    elif page == "👨‍⚕️ Gerenciar Médicos": show_doctor_management(storage)
-    elif page == "👥 Cadastrar Funcionário": show_employee_registration(storage)
-    elif page == "💾 Backup & Exportar": show_backup_management(storage)
-
 # --- MÓDULO DE IA (VERSÃO FINAL - GEMINI 2.5 FLASH) ---
 def show_ai_analysis(storage):
     st.header("🤖 Análise Inteligente e Relatório do PCMSO")
@@ -409,6 +369,181 @@ def show_backup_management(storage):
         with pd.ExcelWriter(output, engine='openpyxl') as writer:
             df.to_excel(writer, index=False)
         st.download_button("Baixar Excel", output.getvalue(), file_name="relatorio_saude.xlsx")
+
+# --- FUNÇÕES DE IMPORTAÇÃO (QUE ESTAVAM FALTANDO) ---
+def show_data_import(storage):
+    st.header("📁 Importar CSV/Excel")
+    import_type = st.radio("O que deseja importar?", ["👥 Funcionários", "👨‍⚕️ Médicos"], horizontal=True)
+    if import_type == "👥 Funcionários":
+        import_employees_ui(storage)
+    else:
+        import_doctors_ui(storage)
+
+def import_employees_ui(storage):
+    st.subheader("Importar Funcionários")
+    uploaded_file = st.file_uploader("Arquivo CSV ou Excel", type=['csv', 'xlsx', 'xls'])
+    if uploaded_file:
+        try:
+            df = pd.read_csv(uploaded_file) if uploaded_file.name.endswith('.csv') else pd.read_excel(uploaded_file)
+            st.write(f"Linhas encontradas: {len(df)}")
+            df.columns = df.columns.str.lower().str.strip()
+            matricula_col = next((c for c in df.columns if c in ['matricula', 'registration', 'mat']), None)
+            nome_col = next((c for c in df.columns if c in ['nome', 'name', 'funcionario']), None)
+            dept_col = next((c for c in df.columns if c in ['departamento', 'setor', 'area']), None)
+            
+            if not matricula_col or not nome_col:
+                st.error("Erro: Arquivo precisa ter colunas 'matricula' e 'nome'")
+                return
+
+            if st.button("📥 Importar Funcionários"):
+                count = 0
+                for _, row in df.iterrows():
+                    mat = str(row[matricula_col]).strip()
+                    nome = str(row[nome_col]).strip()
+                    dept = str(row[dept_col]).strip() if dept_col and pd.notna(row[dept_col]) else ""
+                    if mat and nome:
+                        storage.add_employee(mat, nome, dept)
+                        count += 1
+                st.success(f"✅ {count} funcionários processados!")
+        except Exception as e: st.error(f"Erro: {e}")
+
+def import_doctors_ui(storage):
+    st.subheader("Importar Médicos")
+    uploaded_file = st.file_uploader("Arquivo CSV ou Excel", type=['csv', 'xlsx', 'xls'], key="doc_up")
+    if uploaded_file:
+        try:
+            df = pd.read_csv(uploaded_file) if uploaded_file.name.endswith('.csv') else pd.read_excel(uploaded_file)
+            st.write(f"Linhas: {len(df)}")
+            df.columns = df.columns.str.lower().str.strip()
+            crm_col = next((c for c in df.columns if c in ['crm', 'registro']), None)
+            nome_col = next((c for c in df.columns if c in ['nome', 'name', 'medico']), None)
+            spec_col = next((c for c in df.columns if c in ['especialidade', 'specialty']), None)
+            
+            if not crm_col or not nome_col:
+                st.error("Erro: Precisa de colunas 'crm' e 'nome'")
+                return
+                
+            if st.button("📥 Importar Médicos"):
+                count = 0
+                for _, row in df.iterrows():
+                    crm = str(row[crm_col]).strip()
+                    nome = str(row[nome_col]).strip()
+                    spec = str(row[spec_col]).strip() if spec_col and pd.notna(row[spec_col]) else ""
+                    if crm and nome:
+                        storage.add_doctor(crm, nome, spec)
+                        count += 1
+                st.success(f"✅ {count} médicos processados!")
+        except Exception as e: st.error(f"Erro: {e}")
+
+def show_complete_report_import(storage):
+    st.header("📥 Importar Relatório Completo (Atestados)")
+    st.info("Formato esperado: Nome Func | Matrícula | Médico (Texto) | Local | CID (Opcional)")
+    
+    uploaded_file = st.file_uploader("Relatório Excel", type=['xlsx', 'xls'], key="full_rep")
+    
+    if uploaded_file:
+        if st.button("📥 PROCESSAR E IMPORTAR TUDO", type="primary"):
+            try:
+                df = pd.read_excel(uploaded_file, header=None)
+                stats = {'func_novos':0, 'med_novos':0, 'atestados':0}
+                
+                funcs_cache = {d['registration']: k for k,d in storage.data["employees"].items()}
+                meds_cache = {d['crm'].upper(): k for k,d in storage.data["doctors"].items()}
+                
+                progress = st.progress(0)
+                
+                for idx, row in df.iterrows():
+                    if idx == 0: continue 
+                    
+                    nome_func = str(row[0]).strip() if pd.notna(row[0]) else ""
+                    matricula = str(row[1]).strip() if pd.notna(row[1]) else None
+                    medico_txt = str(row[2]).strip() if pd.notna(row[2]) else ""
+                    local = str(row[3]).strip() if pd.notna(row[3]) and len(df.columns)>3 else ""
+                    cid_imp = str(row[4]).strip() if pd.notna(row[4]) and len(df.columns)>4 else ""
+                    
+                    if not matricula or not matricula.isdigit(): continue
+                    
+                    # 1. Funcionario
+                    emp_id = funcs_cache.get(matricula)
+                    if not emp_id:
+                        emp_id = storage.add_employee(matricula, nome_func, "")
+                        funcs_cache[matricula] = emp_id
+                        stats['func_novos'] += 1
+                    
+                    # 2. Médico
+                    if medico_txt:
+                        crm_match = re.search(r'CRM[\s:]*(\d+[\./\s]*\d*)', medico_txt.upper())
+                        if crm_match:
+                            crm_bruto = crm_match.group(1).replace('.','').replace(' ','')
+                            uf_match = re.search(r'[\/\s](SP|RJ|MG|BA|RS|PR|SC|GO|DF)', medico_txt.upper())
+                            uf = f"/{uf_match.group(1)}" if uf_match else ""
+                            crm_final = f"{crm_bruto}{uf}"
+                            
+                            doc_id = meds_cache.get(crm_final.upper())
+                            if not doc_id:
+                                nome_med = re.sub(r'CRM.*', '', medico_txt, flags=re.IGNORECASE).strip()
+                                doc_id = storage.add_doctor(crm_final, nome_med, "")
+                                meds_cache[crm_final.upper()] = doc_id
+                                stats['med_novos'] += 1
+                            
+                            # 3. Atestado
+                            storage.add_certificate(doc_id, emp_id, datetime.date.today().isoformat(), 1, f"Local: {local}", cid=cid_imp)
+                            stats['atestados'] += 1
+                    
+                    progress.progress((idx+1)/len(df))
+                
+                st.success(f"Concluído! {stats['func_novos']} func. novos, {stats['med_novos']} médicos novos, {stats['atestados']} atestados.")
+                
+            except Exception as e:
+                st.error(f"Erro no processamento: {str(e)}")
+
+# --- FUNÇÃO PRINCIPAL (MAIN) ---
+def main():
+    setup_streamlit_app()
+    storage = MedicalStorage()
+    
+    st.sidebar.title("🏥 Menu Principal")
+    
+    # --- SETUP DA API KEY (BUSCA INTELIGENTE) ---
+    api_key = None
+    if "GEMINI_API_KEY" in st.secrets:
+        api_key = st.secrets["GEMINI_API_KEY"]
+    elif "GEMINI_API" in st.secrets:
+        api_key = st.secrets["GEMINI_API"]
+    elif os.environ.get("GEMINI_API_KEY"):
+        api_key = os.environ.get("GEMINI_API_KEY")
+    elif os.environ.get("GEMINI_API"):
+        api_key = os.environ.get("GEMINI_API")
+        
+    if api_key:
+        os.environ["GEMINI_API_KEY"] = api_key
+        st.sidebar.success("🔐 IA Ativada (Sistema)")
+    else:
+        st.sidebar.warning("⚠️ IA não configurada (Verifique secrets.toml)")
+    
+    st.sidebar.markdown("---")
+    
+    # --- MENU LATERAL ---
+    page = st.sidebar.radio("Navegação:", [
+        "📊 Dashboard", 
+        "🤖 Análise IA (Relatórios)",
+        "📝 Registrar Atendimento", 
+        "👨‍⚕️ Gerenciar Médicos", 
+        "👥 Cadastrar Funcionário", 
+        "📁 Importar Dados",
+        "📥 Importar Relatório Completo",
+        "💾 Backup & Exportar"
+    ])
+    
+    # --- ROTEAMENTO ---
+    if page == "📊 Dashboard": show_dashboard(storage)
+    elif page == "🤖 Análise IA (Relatórios)": show_ai_analysis(storage)
+    elif page == "📝 Registrar Atendimento": show_attendance_registration(storage)
+    elif page == "👨‍⚕️ Gerenciar Médicos": show_doctor_management(storage)
+    elif page == "👥 Cadastrar Funcionário": show_employee_registration(storage)
+    elif page == "📁 Importar Dados": show_data_import(storage)
+    elif page == "📥 Importar Relatório Completo": show_complete_report_import(storage)
+    elif page == "💾 Backup & Exportar": show_backup_management(storage)
 
 if __name__ == "__main__":
     main()
