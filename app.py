@@ -7,7 +7,7 @@ import re
 from io import BytesIO
 import plotly.express as px
 import uuid
-import google.generativeai as genai # Biblioteca da IA Reativada
+import google.generativeai as genai
 
 # --- CLASSE: ANALISTA DE CIDs E RISCOS PSICOSSOCIAIS ---
 class CIDAnalyst:
@@ -163,19 +163,26 @@ def main():
     
     st.sidebar.title("🏥 Menu Principal")
     
-    # --- SETUP DA API KEY DO GEMINI ---
+    # --- SETUP DA API KEY DO GEMINI (AUTOMÁTICO APENAS) ---
+    # Verifica secrets.toml ou Variaveis de Ambiente do Sistema
+    api_key_configured = False
+    
     if "GEMINI_API_KEY" in st.secrets:
         os.environ["GEMINI_API_KEY"] = st.secrets["GEMINI_API_KEY"]
-        st.sidebar.success("🔐 IA Ativada")
+        api_key_configured = True
+    elif os.environ.get("GEMINI_API_KEY"):
+        api_key_configured = True
+        
+    if api_key_configured:
+        st.sidebar.success("🔐 IA Ativada (Sistema)")
     else:
-        api_key = st.sidebar.text_input("🔑 Gemini API Key", type="password")
-        if api_key: os.environ["GEMINI_API_KEY"] = api_key
+        st.sidebar.warning("⚠️ IA não configurada (Verifique secrets.toml)")
     
     st.sidebar.markdown("---")
     
     page = st.sidebar.radio("Navegação:", [
         "📊 Dashboard", 
-        "🤖 Análise IA (Relatórios)", # REATIVADO
+        "🤖 Análise IA (Relatórios)",
         "📝 Registrar Atendimento", 
         "👨‍⚕️ Gerenciar Médicos", 
         "👥 Cadastrar Funcionário", 
@@ -183,19 +190,20 @@ def main():
     ])
     
     if page == "📊 Dashboard": show_dashboard(storage)
-    elif page == "🤖 Análise IA (Relatórios)": show_ai_analysis(storage) # REATIVADO
+    elif page == "🤖 Análise IA (Relatórios)": show_ai_analysis(storage)
     elif page == "📝 Registrar Atendimento": show_attendance_registration(storage)
     elif page == "👨‍⚕️ Gerenciar Médicos": show_doctor_management(storage)
     elif page == "👥 Cadastrar Funcionário": show_employee_registration(storage)
     elif page == "💾 Backup & Exportar": show_backup_management(storage)
 
-# --- MÓDULO DE IA (REATIVADO E INTEGRADO COM NR-1) ---
+# --- MÓDULO DE IA (VERSÃO FINAL - GEMINI 2.5 FLASH) ---
 def show_ai_analysis(storage):
     st.header("🤖 Análise Inteligente e Relatório do PCMSO")
     
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
-        st.warning("⚠️ Insira a chave da API do Gemini no menu lateral para gerar relatórios.")
+        st.error("⚠️ ERRO: Chave da API Gemini não encontrada nas configurações do sistema.")
+        st.info("Adicione sua chave no arquivo `.streamlit/secrets.toml`.")
         return
 
     st.info("A IA analisará seus dados de absenteísmo, focando especialmente nos riscos psicossociais (NR-1).")
@@ -203,10 +211,9 @@ def show_ai_analysis(storage):
     stats = storage.get_statistics()
     top_docs = storage.get_top_doctors_certificates(5)
     
-    # Compilando dados para enviar ao Prompt
+    # Compilando dados
     dept_counts = {}
     riscos_psi_counts = {}
-    
     certificates = storage.data["certificates"]
     employees = storage.data["employees"]
     
@@ -221,9 +228,11 @@ def show_ai_analysis(storage):
             riscos_psi_counts[detalhe] = riscos_psi_counts.get(detalhe, 0) + 1
 
     if st.button("🚀 Gerar Análise Completa com IA", type="primary"):
-        with st.spinner("O Gemini está analisando os riscos e redigindo o relatório..."):
+        with st.spinner("O Gemini 2.5 Flash está analisando os dados..."):
             try:
                 genai.configure(api_key=api_key)
+                
+                # SEU MODELO ESCOLHIDO
                 model = genai.GenerativeModel('gemini-2.5-flash')
                 
                 prompt = f"""
@@ -265,7 +274,6 @@ def show_dashboard(storage):
     st.header("📊 Dashboard de Monitoramento")
     stats = storage.get_statistics()
     
-    # 1. Cartões
     col1, col2, col3, col4 = st.columns(4)
     with col1: st.metric("👨‍⚕️ Médicos", stats["total_doctors"])
     with col2: st.metric("👥 Funcionários", stats["total_employees"])
