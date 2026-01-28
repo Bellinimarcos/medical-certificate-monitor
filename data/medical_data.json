@@ -1,0 +1,1819 @@
+{
+  "doctors": {
+    "a5041d85-68d7-48ec-b83c-a0a4ecc98d5f": {
+      "crm": "24032",
+      "name": "Dra:Érikada C.S.Vianna",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 9,
+      "total_certificates": 9,
+      "created_at": "2025-10-03T17:23:44.869540",
+      "last_attendance": "2026-01-28"
+    },
+    "32282ff9-8d8e-4740-b92b-189dcb419152": {
+      "crm": "81102",
+      "name": "Dr.André F.da Silva",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 10,
+      "total_certificates": 10,
+      "created_at": "2025-10-03T17:23:44.881652",
+      "last_attendance": "2025-10-03"
+    },
+    "5ddedb9d-68fb-4607-a531-a0d5ca92edab": {
+      "crm": "41812",
+      "name": "Dr.Thiago Miranda",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:44.894484",
+      "last_attendance": "2025-10-03"
+    },
+    "35e5d3e2-5863-4fc0-a126-a510bd45a17e": {
+      "crm": "107502",
+      "name": "Rayssa S.Correa",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:44.910459",
+      "last_attendance": "2025-10-03"
+    },
+    "3b9d6018-553d-4f8e-b8ea-bf2ad96a4e5b": {
+      "crm": "99167",
+      "name": "Dra:Nayanne G.Marciano",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:44.934062",
+      "last_attendance": "2025-10-03"
+    },
+    "d3972eae-4342-4766-9699-9293d1f0ee08": {
+      "crm": "27773",
+      "name": "Dr:Alisson F.Pereira",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:44.946953",
+      "last_attendance": "2025-10-03"
+    },
+    "1be889c4-4d23-45f5-a8ae-e7a5f57ff04b": {
+      "crm": "94333",
+      "name": "Dr:Rafael K.de Almeida",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 10,
+      "total_certificates": 10,
+      "created_at": "2025-10-03T17:23:44.956492",
+      "last_attendance": "2025-10-03"
+    },
+    "68a23246-8188-472b-97d4-4ed5d5ec49a9": {
+      "crm": "107308",
+      "name": "Dra:Letícia S.Mendes",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:44.985004",
+      "last_attendance": "2025-10-03"
+    },
+    "708a79cb-76f6-435e-9e52-2b29fcafb376": {
+      "crm": "106913",
+      "name": "Dra:Vitória R.Mendonça",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:44.994078",
+      "last_attendance": "2025-10-03"
+    },
+    "bf8601fc-6cdd-4003-960e-58a1de2cc4b7": {
+      "crm": "25570",
+      "name": "Dra:Janine V.S.Tenório",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.016131",
+      "last_attendance": "2025-10-03"
+    },
+    "739dd377-7045-4ecd-8042-9d056af51d73": {
+      "crm": "93283",
+      "name": "Dra:Raquel J.C.Meirelles",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 4,
+      "total_certificates": 4,
+      "created_at": "2025-10-03T17:23:45.029659",
+      "last_attendance": "2025-10-03"
+    },
+    "506a1b87-0214-43e9-8dae-84b93c176bb2": {
+      "crm": "74097",
+      "name": "Dr:Luiz A.F.Toledo",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 4,
+      "total_certificates": 4,
+      "created_at": "2025-10-03T17:23:45.048902",
+      "last_attendance": "2025-10-03"
+    },
+    "8ef71303-2af8-431b-8448-6d6f52810c53": {
+      "crm": "44582",
+      "name": "Kener A.Maia",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 10,
+      "total_certificates": 10,
+      "created_at": "2025-10-03T17:23:45.107529",
+      "last_attendance": "2025-10-03"
+    },
+    "271db541-8edb-43bd-b117-ec537e0e39e1": {
+      "crm": "106688/GO",
+      "name": "Beatriz Gomes Maia",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 6,
+      "total_certificates": 6,
+      "created_at": "2025-10-03T17:23:45.119831",
+      "last_attendance": "2025-10-03"
+    },
+    "113e09ce-2b9f-45d6-aa42-27d25213e472": {
+      "crm": "100188",
+      "name": "Rafaela G.de Morais",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 10,
+      "total_certificates": 10,
+      "created_at": "2025-10-03T17:23:45.135586",
+      "last_attendance": "2025-10-03"
+    },
+    "31a8635c-630c-4fce-8e3a-052ac8b482e0": {
+      "crm": "16846",
+      "name": "Antonio C.de Alagão",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.165809",
+      "last_attendance": "2025-10-03"
+    },
+    "3dc9ad32-5eb1-41e7-b193-80f476b00c4f": {
+      "crm": "88010",
+      "name": "Thais A.Coelho e Silva",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 6,
+      "total_certificates": 6,
+      "created_at": "2025-10-03T17:23:45.199283",
+      "last_attendance": "2025-10-03"
+    },
+    "ffe2b497-6d76-41b5-a6cf-234c4287b681": {
+      "crm": "55063/PR",
+      "name": "Thiago M.Peixoto PR",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.225185",
+      "last_attendance": "2025-10-03"
+    },
+    "d2499df2-5ba5-442b-a76d-96ba867eb8ba": {
+      "crm": "106783",
+      "name": "Tiago M.Renno",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.246643",
+      "last_attendance": "2025-10-03"
+    },
+    "bcfe750c-429c-4c3e-9b1f-54119f3a2f22": {
+      "crm": "60915",
+      "name": "Vanessa O.Silva Grassi",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.274721",
+      "last_attendance": "2025-10-03"
+    },
+    "07bdbcdf-6a71-4f02-b98c-3ccdf5513399": {
+      "crm": "100190/GO",
+      "name": "Gustavo Gomes Duarte",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.302831",
+      "last_attendance": "2025-10-03"
+    },
+    "86ff0635-f505-46ed-a48d-a990744d663f": {
+      "crm": "93676/PE",
+      "name": "Julia Pereira Lopes",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.322646",
+      "last_attendance": "2025-10-03"
+    },
+    "6b1cc7bd-d912-4e5e-b73f-3da97c6c5276": {
+      "crm": "65130",
+      "name": "Ana A. B.de Oliverira",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.361577",
+      "last_attendance": "2025-10-03"
+    },
+    "4a4033cf-34ed-4677-974c-6edaf2fec50b": {
+      "crm": "50267",
+      "name": "Pollyana D.Salles",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.449812",
+      "last_attendance": "2025-10-03"
+    },
+    "8d57dcd8-daf3-4846-8f74-bb84c5f90bc5": {
+      "crm": "106905",
+      "name": "Lucas F.Cortez",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.489166",
+      "last_attendance": "2025-10-03"
+    },
+    "fe305b78-efa2-4451-a4ed-f64eabbbd3af": {
+      "crm": "9464",
+      "name": "Keren N.G.A.Sarjorato",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 4,
+      "total_certificates": 4,
+      "created_at": "2025-10-03T17:23:45.535515",
+      "last_attendance": "2025-10-03"
+    },
+    "270eca3f-2b53-4e1a-8a9f-d5d950200b6c": {
+      "crm": "100369",
+      "name": "Gabrielly de S.Gonçalves",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.583780",
+      "last_attendance": "2025-10-03"
+    },
+    "91eea75a-6532-441a-b0d9-bfcc684969d7": {
+      "crm": "91450",
+      "name": "Rafael G.de Oliveira",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.608995",
+      "last_attendance": "2025-10-03"
+    },
+    "a2561759-e872-4a78-bcef-a6205bc1c5f9": {
+      "crm": "199018",
+      "name": "Walesca K.da Silva",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.685793",
+      "last_attendance": "2025-10-03"
+    },
+    "e03aad43-4ef5-4c79-9347-2eea7807decb": {
+      "crm": "82381",
+      "name": "Joao P.R.Duarte",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.720566",
+      "last_attendance": "2025-10-03"
+    },
+    "4c17b92f-ee2a-4903-9760-f721ecc0d0d7": {
+      "crm": "100494",
+      "name": "Loiane R.de M.Arguelho",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.815635",
+      "last_attendance": "2025-10-03"
+    },
+    "0a1e1551-9438-4f95-86af-271491a7ea0c": {
+      "crm": "110764",
+      "name": "Tatana Mendes",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.840404",
+      "last_attendance": "2025-10-03"
+    },
+    "1e9562be-97de-46f1-ab61-016d3d280a0e": {
+      "crm": "106910",
+      "name": "Luana de A.de Oliveira",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.865875",
+      "last_attendance": "2025-10-03"
+    },
+    "34a173f4-7ea9-4792-b93e-6cd060e8cd9e": {
+      "crm": "100551",
+      "name": "Clara F.C.Chiaradia",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.900579",
+      "last_attendance": "2025-10-03"
+    },
+    "f3db64be-9d09-4f89-aa76-18ec30dcdbfa": {
+      "crm": "69292",
+      "name": "Vanessa de B.Belline",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.995988",
+      "last_attendance": "2025-10-03"
+    },
+    "5f480211-fd48-4e02-a053-6a56690db3be": {
+      "crm": "65393",
+      "name": "Roberta Cintra Soane",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:46.052091",
+      "last_attendance": "2025-10-03"
+    },
+    "b66efca5-097e-4dff-a84d-65063e3d31fc": {
+      "crm": "26336",
+      "name": "Isaias Ferraz",
+      "specialty": "",
+      "phone": "",
+      "email": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:46.100266",
+      "last_attendance": "2025-10-03"
+    }
+  },
+  "employees": {
+    "fcec0231-82de-4e54-bbc8-86e34a898e37": {
+      "registration": "4589",
+      "name": "RUTI MARA DE O.PORTO",
+      "department": "",
+      "total_attendances": 9,
+      "total_certificates": 9,
+      "created_at": "2025-10-03T17:23:44.863069"
+    },
+    "6a335645-0160-46ec-b02d-69cc8409669d": {
+      "registration": "11778",
+      "name": "MEIRE AP.DE OLIVEIRA",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:44.926260"
+    },
+    "4968bc4b-6878-4b62-9d14-4b7ce7187211": {
+      "registration": "215",
+      "name": "ELIANE CRISTINA FARIA",
+      "department": "",
+      "total_attendances": 4,
+      "total_certificates": 4,
+      "created_at": "2025-10-03T17:23:44.942124"
+    },
+    "ded6553c-d049-4e37-8041-e6fdad851b85": {
+      "registration": "11834",
+      "name": "JESSICA SILVA DOS SANTOS",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:44.966318"
+    },
+    "440f6189-3162-45f2-93a5-4b9de944b5dc": {
+      "registration": "1287",
+      "name": "PEDRO DE SOUZA ANICETO",
+      "department": "",
+      "total_attendances": 4,
+      "total_certificates": 4,
+      "created_at": "2025-10-03T17:23:44.980479"
+    },
+    "091d7454-4062-45f2-81ba-abb74e536da3": {
+      "registration": "6007",
+      "name": "ELIZANDRA AP.DA S.BALDONI",
+      "department": "",
+      "total_attendances": 6,
+      "total_certificates": 6,
+      "created_at": "2025-10-03T17:23:45.013407"
+    },
+    "284f5f38-feae-4d2f-959a-415084de5bb9": {
+      "registration": "11212",
+      "name": "BRINA DO NASC.DEODATO",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.080814"
+    },
+    "3a4cfc60-68e0-457d-a4a1-08235a7a7870": {
+      "registration": "5549",
+      "name": "MARIANA R.FERNANDES",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.094225"
+    },
+    "83ff795c-022a-448f-831a-e5b2c4ee7ec8": {
+      "registration": "5030",
+      "name": "LUANA M.PEREIRA BORGES",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.103567"
+    },
+    "3a2c2282-5ddb-4f6a-9a45-3b0f535c437c": {
+      "registration": "11294",
+      "name": "FERNANDA M.CARINCI",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.115761"
+    },
+    "5e726593-98f5-4fc8-8c91-4a71bcd75746": {
+      "registration": "5138",
+      "name": "RENATA DE S.SILVA",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.131602"
+    },
+    "57fc50f6-2a18-4d13-8876-4bd520ce2bf0": {
+      "registration": "2766",
+      "name": "GISELE N.SATHLER",
+      "department": "",
+      "total_attendances": 4,
+      "total_certificates": 4,
+      "created_at": "2025-10-03T17:23:45.149230"
+    },
+    "0ffdb66f-37a3-486e-94ba-8a41ce33fd46": {
+      "registration": "6031",
+      "name": "EVELLYN C.M.SILVA",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.179770"
+    },
+    "71aabca2-6366-47d2-96e5-14d567d4fb23": {
+      "registration": "5927",
+      "name": "YASMINE GOUVEA MADELLA",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.193775"
+    },
+    "6bfe60d2-7ef8-4722-87eb-8db332f8ab41": {
+      "registration": "2962",
+      "name": "MARIA MARCIA M.DA COSTA",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.215951"
+    },
+    "736b7ee1-afbb-4753-bb74-4bb74d588e5b": {
+      "registration": "11476",
+      "name": "ABNER DIAS F.DOS SANTOS",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.240398"
+    },
+    "04c40ace-5a2a-41e0-b536-d583ea4b6b67": {
+      "registration": "1213",
+      "name": "JANETE V.ARANTES DA SILVA",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.269907"
+    },
+    "17251333-511f-4354-b414-ff9c7caaf673": {
+      "registration": "1429",
+      "name": "HELENA M.GORGULHO DOS SANTOS",
+      "department": "",
+      "total_attendances": 0,
+      "total_certificates": 0,
+      "created_at": "2025-10-03T17:23:45.288556"
+    },
+    "3d3c8e02-b305-42c2-b344-7f00d2568c56": {
+      "registration": "7770",
+      "name": "PAULO SERGIO S.ADAMI",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.299373"
+    },
+    "ec0f6c27-ee3d-4fbc-86e3-6d8501550f09": {
+      "registration": "6391",
+      "name": "JOSIMARA AP.PAIVA",
+      "department": "",
+      "total_attendances": 4,
+      "total_certificates": 4,
+      "created_at": "2025-10-03T17:23:45.316391"
+    },
+    "083f99ba-3a55-4a14-a6f3-fe26f16af92b": {
+      "registration": "10320",
+      "name": "MILENA S.TEODORO",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.353252"
+    },
+    "d3ac6b71-a712-4492-a427-c2ec1e19029d": {
+      "registration": "586",
+      "name": "ANTONIO C.DE CASTRO",
+      "department": "",
+      "total_attendances": 4,
+      "total_certificates": 4,
+      "created_at": "2025-10-03T17:23:45.375782"
+    },
+    "0afa8513-734c-46bb-89af-4144c9118cf2": {
+      "registration": "11613",
+      "name": "FERNANDA DE C.S.VILELA",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.407065"
+    },
+    "9d3df483-39f3-4e50-8f04-c484431f12e4": {
+      "registration": "9316",
+      "name": "RAFAEL A.S.DE AZEVEDO",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.424394"
+    },
+    "e294eb72-94a0-439c-b3ef-8fc7f7982acd": {
+      "registration": "7602",
+      "name": "REJANE V.DA S.ANDRADE",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.442437"
+    },
+    "e43b63d0-b7a5-4e06-954b-cc7acbf70c53": {
+      "registration": "11251",
+      "name": "GABRIELE M.DE P.PEREIRA",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.476169"
+    },
+    "41b29b66-5e4c-48fc-acf9-4fed256c88a5": {
+      "registration": "11361",
+      "name": "CHAENE AP.DA CRUZ SILVA",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.510209"
+    },
+    "73449274-e73d-4c97-ac8e-538cfe71bd81": {
+      "registration": "11520",
+      "name": "DANIEL C.RIBEIRO",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.527066"
+    },
+    "2c00cdf4-d890-450e-a058-e74457663d81": {
+      "registration": "9994",
+      "name": "FABIANA M.VAZ",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.555046"
+    },
+    "c0175a57-94e5-4f3c-9ea6-d5b4399bccad": {
+      "registration": "11484",
+      "name": "JENNIFER M.SCHETTINO",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.575364"
+    },
+    "5996a73c-eee5-4f25-b7db-ef6aa6154329": {
+      "registration": "12055",
+      "name": "DAIANE A.P.MIGUEL",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.602276"
+    },
+    "4e9bbc13-52f2-46cc-b344-71ad04ceef97": {
+      "registration": "6760",
+      "name": "MARIA DE F.FARIA",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.627056"
+    },
+    "4a6cf73a-c19d-4643-acb6-ff4403ac0f56": {
+      "registration": "11930",
+      "name": "JENIFER R.DAS D.SOARES",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.651380"
+    },
+    "63f991ce-01bc-437b-bb97-eeee431a4af3": {
+      "registration": "5155",
+      "name": "MARCELA F.B.SILVA",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.674323"
+    },
+    "67c5b980-7b21-4781-aa8c-9bbfa1cabf78": {
+      "registration": "7340",
+      "name": "MARA G.B.GOMES",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.708425"
+    },
+    "f49609ce-e810-4fe5-9528-52061d2decb4": {
+      "registration": "10968",
+      "name": "KARINA CRISTINA DA SILVA",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.737578"
+    },
+    "010a9c31-ec22-48fc-983a-61167b72ebdd": {
+      "registration": "5176",
+      "name": "JUNIO LEONI DOS SANTOS",
+      "department": "",
+      "total_attendances": 6,
+      "total_certificates": 6,
+      "created_at": "2025-10-03T17:23:45.759662"
+    },
+    "62d3aa43-20d6-46c2-95b3-232feff8a6cb": {
+      "registration": "1398",
+      "name": "LUCIA HELENA DE OLIVEIRA CORREA",
+      "department": "",
+      "total_attendances": 6,
+      "total_certificates": 6,
+      "created_at": "2025-10-03T17:23:45.805728"
+    },
+    "fee816a8-6fa2-4695-b17e-3a73595b63b3": {
+      "registration": "5158",
+      "name": "SAMANTA R.DA SILVA",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.889839"
+    },
+    "010ddc6b-11e9-4055-aaf8-c42e7d490627": {
+      "registration": "11292",
+      "name": "RAYANE C.MOREIRA",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.924892"
+    },
+    "d8d31ba5-1985-415e-870a-aaab1afb292b": {
+      "registration": "10760",
+      "name": "WILSON B.PAIVA",
+      "department": "",
+      "total_attendances": 4,
+      "total_certificates": 4,
+      "created_at": "2025-10-03T17:23:45.949541"
+    },
+    "9badb452-461c-4cff-a4fe-9fd1d3496243": {
+      "registration": "11926",
+      "name": "TIAGO F.DA SILVA",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:45.987448"
+    },
+    "30ae475e-6417-4221-a922-dd731ecbbdb0": {
+      "registration": "5899",
+      "name": "LAIS AP.DOS S.ANDRADE",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:46.016428"
+    },
+    "329cf20d-c23c-4d3a-af3b-be314a922d10": {
+      "registration": "7453",
+      "name": "AMANDA C.DA S.MIRANDA",
+      "department": "",
+      "total_attendances": 4,
+      "total_certificates": 4,
+      "created_at": "2025-10-03T17:23:46.040019"
+    },
+    "81ae5a5a-499c-4886-94cc-7ff1b6e46f52": {
+      "registration": "11161",
+      "name": "ANA VITORIA DOS S.GOMES",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:46.088728"
+    },
+    "22ae50e9-6c27-4f71-bbc9-8582229a1586": {
+      "registration": "11675",
+      "name": "SILVIA H.RIBEIRO",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:46.133667"
+    },
+    "4c9faa75-5c9c-4be8-9f5a-0124bcd7fb1b": {
+      "registration": "1800",
+      "name": "CARMEM DOS SANTOS",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:46.157075"
+    },
+    "00c6e266-4e19-4ea1-82d0-0cbbf27eeacd": {
+      "registration": "4659",
+      "name": "REGIANE K.M.C.GUIMARAES",
+      "department": "",
+      "total_attendances": 2,
+      "total_certificates": 2,
+      "created_at": "2025-10-03T17:23:46.190952"
+    }
+  },
+  "certificates": {
+    "f28a47ef-0d83-49cc-aa5a-9650e2f5a704": {
+      "doctor_id": "a5041d85-68d7-48ec-b83c-a0a4ecc98d5f",
+      "employee_id": "fcec0231-82de-4e54-bbc8-86e34a898e37",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Clínica",
+      "created_at": "2025-10-03T17:23:44.873018"
+    },
+    "13a9ce3d-1bb8-4738-a354-819063ed9a2b": {
+      "doctor_id": "32282ff9-8d8e-4740-b92b-189dcb419152",
+      "employee_id": "fcec0231-82de-4e54-bbc8-86e34a898e37",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:44.887194"
+    },
+    "cae73e8f-dced-4479-a805-2b9e3a458502": {
+      "doctor_id": "5ddedb9d-68fb-4607-a531-a0d5ca92edab",
+      "employee_id": "fcec0231-82de-4e54-bbc8-86e34a898e37",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:44.905385"
+    },
+    "026883e8-e437-4052-9341-eac0370c1c73": {
+      "doctor_id": "35e5d3e2-5863-4fc0-a126-a510bd45a17e",
+      "employee_id": "fcec0231-82de-4e54-bbc8-86e34a898e37",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Posto",
+      "created_at": "2025-10-03T17:23:44.917300"
+    },
+    "61c6b137-6200-433c-b562-98a8309c28b7": {
+      "doctor_id": "3b9d6018-553d-4f8e-b8ea-bf2ad96a4e5b",
+      "employee_id": "6a335645-0160-46ec-b02d-69cc8409669d",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Posto",
+      "created_at": "2025-10-03T17:23:44.937500"
+    },
+    "57c27794-6749-4648-a6bf-75088415bde1": {
+      "doctor_id": "d3972eae-4342-4766-9699-9293d1f0ee08",
+      "employee_id": "4968bc4b-6878-4b62-9d14-4b7ce7187211",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Clínica (2)",
+      "created_at": "2025-10-03T17:23:44.950318"
+    },
+    "986c845d-f869-41c9-b4bd-ba1efcd32577": {
+      "doctor_id": "1be889c4-4d23-45f5-a8ae-e7a5f57ff04b",
+      "employee_id": "4968bc4b-6878-4b62-9d14-4b7ce7187211",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Hospital",
+      "created_at": "2025-10-03T17:23:44.958979"
+    },
+    "6e892c79-cdc9-481a-adc8-91a025468552": {
+      "doctor_id": "1be889c4-4d23-45f5-a8ae-e7a5f57ff04b",
+      "employee_id": "ded6553c-d049-4e37-8041-e6fdad851b85",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Hospital",
+      "created_at": "2025-10-03T17:23:44.968556"
+    },
+    "594707c1-6eb8-42b1-86a6-e53e11028080": {
+      "doctor_id": "68a23246-8188-472b-97d4-4ed5d5ec49a9",
+      "employee_id": "440f6189-3162-45f2-93a5-4b9de944b5dc",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Santa Casa",
+      "created_at": "2025-10-03T17:23:44.988497"
+    },
+    "9c1d9b43-82a7-4c90-b7d9-d277910edf83": {
+      "doctor_id": "708a79cb-76f6-435e-9e52-2b29fcafb376",
+      "employee_id": "440f6189-3162-45f2-93a5-4b9de944b5dc",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:45.003272"
+    },
+    "ac847aad-b610-4189-aead-ff7c664db56f": {
+      "doctor_id": "bf8601fc-6cdd-4003-960e-58a1de2cc4b7",
+      "employee_id": "091d7454-4062-45f2-81ba-abb74e536da3",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:45.020974"
+    },
+    "bc1a2432-50e0-442f-b807-490d3bfb554c": {
+      "doctor_id": "739dd377-7045-4ecd-8042-9d056af51d73",
+      "employee_id": "091d7454-4062-45f2-81ba-abb74e536da3",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:45.038097"
+    },
+    "9ba692a2-fcb8-42a3-8203-05c70475f6f3": {
+      "doctor_id": "506a1b87-0214-43e9-8dae-84b93c176bb2",
+      "employee_id": "091d7454-4062-45f2-81ba-abb74e536da3",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:45.054806"
+    },
+    "55fc36c2-7627-466c-8138-ff53d77ec49e": {
+      "doctor_id": "a5041d85-68d7-48ec-b83c-a0a4ecc98d5f",
+      "employee_id": "284f5f38-feae-4d2f-959a-415084de5bb9",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Clínica",
+      "created_at": "2025-10-03T17:23:45.085327"
+    },
+    "525cef92-8707-4c66-be91-dcc57a17f3ef": {
+      "doctor_id": "32282ff9-8d8e-4740-b92b-189dcb419152",
+      "employee_id": "3a4cfc60-68e0-457d-a4a1-08235a7a7870",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:45.098461"
+    },
+    "a29ca619-ad9f-4588-b080-243a61054abc": {
+      "doctor_id": "8ef71303-2af8-431b-8448-6d6f52810c53",
+      "employee_id": "83ff795c-022a-448f-831a-e5b2c4ee7ec8",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:45.110116"
+    },
+    "8edcbd28-48e4-44c4-b762-617a05a2f6b4": {
+      "doctor_id": "271db541-8edb-43bd-b117-ec537e0e39e1",
+      "employee_id": "3a2c2282-5ddb-4f6a-9a45-3b0f535c437c",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:45.123097"
+    },
+    "65a08c55-ba43-4cf4-bfb1-cbb5e9af7fe3": {
+      "doctor_id": "113e09ce-2b9f-45d6-aa42-27d25213e472",
+      "employee_id": "5e726593-98f5-4fc8-8c91-4a71bcd75746",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:45.141831"
+    },
+    "8c00cd01-4cbb-44ff-9dc2-1b57e99f4ac1": {
+      "doctor_id": "1be889c4-4d23-45f5-a8ae-e7a5f57ff04b",
+      "employee_id": "57fc50f6-2a18-4d13-8876-4bd520ce2bf0",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:45.155215"
+    },
+    "8ac5316c-d4bf-4bc8-ae92-5d01a9abc2d5": {
+      "doctor_id": "31a8635c-630c-4fce-8e3a-052ac8b482e0",
+      "employee_id": "57fc50f6-2a18-4d13-8876-4bd520ce2bf0",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:45.170468"
+    },
+    "304638f1-d015-49d7-b028-1adc97aa09b1": {
+      "doctor_id": "271db541-8edb-43bd-b117-ec537e0e39e1",
+      "employee_id": "0ffdb66f-37a3-486e-94ba-8a41ce33fd46",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:45.184851"
+    },
+    "2ba30a2f-ae3f-49f9-80c6-7bbd4d1daef4": {
+      "doctor_id": "3dc9ad32-5eb1-41e7-b193-80f476b00c4f",
+      "employee_id": "71aabca2-6366-47d2-96e5-14d567d4fb23",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:45.207621"
+    },
+    "76b84129-d718-43bc-9687-677fd964b317": {
+      "doctor_id": "ffe2b497-6d76-41b5-a6cf-234c4287b681",
+      "employee_id": "6bfe60d2-7ef8-4722-87eb-8db332f8ab41",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Clínica",
+      "created_at": "2025-10-03T17:23:45.232426"
+    },
+    "890bda2f-5438-4ef0-8d47-e877dbfddaa6": {
+      "doctor_id": "d2499df2-5ba5-442b-a76d-96ba867eb8ba",
+      "employee_id": "736b7ee1-afbb-4753-bb74-4bb74d588e5b",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:45.263239"
+    },
+    "2b43bc94-b854-484c-8427-10b415dc6ad9": {
+      "doctor_id": "bcfe750c-429c-4c3e-9b1f-54119f3a2f22",
+      "employee_id": "04c40ace-5a2a-41e0-b536-d583ea4b6b67",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:45.280770"
+    },
+    "16b056ff-25f3-460c-b461-cd1da0ecf774": {
+      "doctor_id": "07bdbcdf-6a71-4f02-b98c-3ccdf5513399",
+      "employee_id": "3d3c8e02-b305-42c2-b344-7f00d2568c56",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:45.309724"
+    },
+    "9b7a1876-a0cc-4387-a6ff-36c34cdf5c7f": {
+      "doctor_id": "86ff0635-f505-46ed-a48d-a990744d663f",
+      "employee_id": "ec0f6c27-ee3d-4fbc-86e3-6d8501550f09",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:45.329002"
+    },
+    "de8898ff-8e11-43cc-993e-e613aaba3f5d": {
+      "doctor_id": "113e09ce-2b9f-45d6-aa42-27d25213e472",
+      "employee_id": "ec0f6c27-ee3d-4fbc-86e3-6d8501550f09",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:45.338389"
+    },
+    "dbf59865-7a22-4a29-8989-6c7553e406c5": {
+      "doctor_id": "6b1cc7bd-d912-4e5e-b73f-3da97c6c5276",
+      "employee_id": "083f99ba-3a55-4a14-a6f3-fe26f16af92b",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Clínica",
+      "created_at": "2025-10-03T17:23:45.368646"
+    },
+    "3a0b41fa-7918-4fdd-a0b4-bcb3d14de9d7": {
+      "doctor_id": "8ef71303-2af8-431b-8448-6d6f52810c53",
+      "employee_id": "d3ac6b71-a712-4492-a427-c2ec1e19029d",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Consutório",
+      "created_at": "2025-10-03T17:23:45.385704"
+    },
+    "4cc1caa5-0d56-468d-be0a-302a80d6b68c": {
+      "doctor_id": "271db541-8edb-43bd-b117-ec537e0e39e1",
+      "employee_id": "d3ac6b71-a712-4492-a427-c2ec1e19029d",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:45.399535"
+    },
+    "67b931c8-e24f-464f-a8f3-90d13ea87105": {
+      "doctor_id": "3dc9ad32-5eb1-41e7-b193-80f476b00c4f",
+      "employee_id": "0afa8513-734c-46bb-89af-4144c9118cf2",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:45.416991"
+    },
+    "fac72e35-143a-4ae5-8566-69e54da01700": {
+      "doctor_id": "3dc9ad32-5eb1-41e7-b193-80f476b00c4f",
+      "employee_id": "9d3df483-39f3-4e50-8f04-c484431f12e4",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:45.434351"
+    },
+    "f83b487a-c58c-4e34-85ff-f8e2b8eb1759": {
+      "doctor_id": "4a4033cf-34ed-4677-974c-6edaf2fec50b",
+      "employee_id": "e294eb72-94a0-439c-b3ef-8fc7f7982acd",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Unimed",
+      "created_at": "2025-10-03T17:23:45.465265"
+    },
+    "bf1ec61d-d2e3-4899-a94d-450ac79343db": {
+      "doctor_id": "8d57dcd8-daf3-4846-8f74-bb84c5f90bc5",
+      "employee_id": "e43b63d0-b7a5-4e06-954b-cc7acbf70c53",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:45.500084"
+    },
+    "a35777e4-3f1a-439d-8d5c-122c359a189d": {
+      "doctor_id": "32282ff9-8d8e-4740-b92b-189dcb419152",
+      "employee_id": "41b29b66-5e4c-48fc-acf9-4fed256c88a5",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:45.517363"
+    },
+    "40c272ef-a6d1-4dde-8a31-679a021e10fd": {
+      "doctor_id": "fe305b78-efa2-4451-a4ed-f64eabbbd3af",
+      "employee_id": "73449274-e73d-4c97-ac8e-538cfe71bd81",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:45.542787"
+    },
+    "20f5d027-67c8-49c5-9c69-07bbca7e44ca": {
+      "doctor_id": "fe305b78-efa2-4451-a4ed-f64eabbbd3af",
+      "employee_id": "2c00cdf4-d890-450e-a058-e74457663d81",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:45.563607"
+    },
+    "7dbc9971-a629-4bff-aac6-7acf9ed7dfab": {
+      "doctor_id": "270eca3f-2b53-4e1a-8a9f-d5d950200b6c",
+      "employee_id": "c0175a57-94e5-4f3c-9ea6-d5b4399bccad",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Hospital",
+      "created_at": "2025-10-03T17:23:45.590316"
+    },
+    "71b383e7-66a7-49c4-b97e-dbfba0376086": {
+      "doctor_id": "91eea75a-6532-441a-b0d9-bfcc684969d7",
+      "employee_id": "5996a73c-eee5-4f25-b7db-ef6aa6154329",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:45.618905"
+    },
+    "28b5ea85-b066-4ae0-8813-bee5b433ab75": {
+      "doctor_id": "1be889c4-4d23-45f5-a8ae-e7a5f57ff04b",
+      "employee_id": "4e9bbc13-52f2-46cc-b344-71ad04ceef97",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:45.637780"
+    },
+    "53632027-c2b9-4019-a1b4-7d848c3a8f78": {
+      "doctor_id": "506a1b87-0214-43e9-8dae-84b93c176bb2",
+      "employee_id": "4a6cf73a-c19d-4643-acb6-ff4403ac0f56",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:45.665290"
+    },
+    "46b0ab66-c97b-43c7-a7b4-3173e4fec89f": {
+      "doctor_id": "a2561759-e872-4a78-bcef-a6205bc1c5f9",
+      "employee_id": "63f991ce-01bc-437b-bb97-eeee431a4af3",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:45.696876"
+    },
+    "b43fb501-c88a-4a3c-ad27-2135d459604b": {
+      "doctor_id": "e03aad43-4ef5-4c79-9347-2eea7807decb",
+      "employee_id": "67c5b980-7b21-4781-aa8c-9bbfa1cabf78",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:45.726703"
+    },
+    "bb9454da-d760-4721-83f8-babbc46d6a0e": {
+      "doctor_id": "32282ff9-8d8e-4740-b92b-189dcb419152",
+      "employee_id": "f49609ce-e810-4fe5-9528-52061d2decb4",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:45.746075"
+    },
+    "d6494581-57bc-4f7a-843d-c07f93cd7cff": {
+      "doctor_id": "8ef71303-2af8-431b-8448-6d6f52810c53",
+      "employee_id": "010a9c31-ec22-48fc-983a-61167b72ebdd",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:45.769893"
+    },
+    "6682aefd-5a29-4f96-be93-0b20e316c370": {
+      "doctor_id": "8ef71303-2af8-431b-8448-6d6f52810c53",
+      "employee_id": "010a9c31-ec22-48fc-983a-61167b72ebdd",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:45.782032"
+    },
+    "678f8c86-90e5-4dc0-8d50-87597ac275c2": {
+      "doctor_id": "8ef71303-2af8-431b-8448-6d6f52810c53",
+      "employee_id": "010a9c31-ec22-48fc-983a-61167b72ebdd",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:45.793262"
+    },
+    "642a6782-3da9-42ed-8607-72ea38adeff9": {
+      "doctor_id": "4c17b92f-ee2a-4903-9760-f721ecc0d0d7",
+      "employee_id": "62d3aa43-20d6-46c2-95b3-232feff8a6cb",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:45.824953"
+    },
+    "88bebc97-429e-4dc9-8ae4-a48fe30b07f6": {
+      "doctor_id": "0a1e1551-9438-4f95-86af-271491a7ea0c",
+      "employee_id": "62d3aa43-20d6-46c2-95b3-232feff8a6cb",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:45.853039"
+    },
+    "6e86c3bf-eac8-4fe3-86aa-31506028089c": {
+      "doctor_id": "1e9562be-97de-46f1-ab61-016d3d280a0e",
+      "employee_id": "62d3aa43-20d6-46c2-95b3-232feff8a6cb",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:45.875958"
+    },
+    "975eb9bb-d251-4279-90f0-352233f72c56": {
+      "doctor_id": "34a173f4-7ea9-4792-b93e-6cd060e8cd9e",
+      "employee_id": "fee816a8-6fa2-4695-b17e-3a73595b63b3",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Clínicas",
+      "created_at": "2025-10-03T17:23:45.914905"
+    },
+    "7fce766b-5275-4eaa-a4b8-f676f7e42c16": {
+      "doctor_id": "32282ff9-8d8e-4740-b92b-189dcb419152",
+      "employee_id": "010ddc6b-11e9-4055-aaf8-c42e7d490627",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:45.936790"
+    },
+    "ce82ad12-9b51-479b-9571-01221f650487": {
+      "doctor_id": "113e09ce-2b9f-45d6-aa42-27d25213e472",
+      "employee_id": "d8d31ba5-1985-415e-870a-aaab1afb292b",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:45.957220"
+    },
+    "18bfc109-8569-4a6e-bec6-6ee744a63786": {
+      "doctor_id": "113e09ce-2b9f-45d6-aa42-27d25213e472",
+      "employee_id": "d8d31ba5-1985-415e-870a-aaab1afb292b",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:45.976278"
+    },
+    "ceb9091d-ac0f-45d9-8d62-b7852035fe25": {
+      "doctor_id": "f3db64be-9d09-4f89-aa76-18ec30dcdbfa",
+      "employee_id": "9badb452-461c-4cff-a4fe-9fd1d3496243",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:46.003784"
+    },
+    "30ee0e43-ca1a-4c0f-b3b6-0e57f3e124b5": {
+      "doctor_id": "113e09ce-2b9f-45d6-aa42-27d25213e472",
+      "employee_id": "30ae475e-6417-4221-a922-dd731ecbbdb0",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:46.027010"
+    },
+    "6d2e2629-894a-4c66-9775-9a7eef645cff": {
+      "doctor_id": "5f480211-fd48-4e02-a053-6a56690db3be",
+      "employee_id": "329cf20d-c23c-4d3a-af3b-be314a922d10",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:46.060621"
+    },
+    "f495d36e-0ce5-4bf4-9650-5cb8407742a9": {
+      "doctor_id": "a5041d85-68d7-48ec-b83c-a0a4ecc98d5f",
+      "employee_id": "329cf20d-c23c-4d3a-af3b-be314a922d10",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Clínica",
+      "created_at": "2025-10-03T17:23:46.074522"
+    },
+    "5df79bf0-bc0f-4d7e-a0ff-f16cd9bd1379": {
+      "doctor_id": "b66efca5-097e-4dff-a84d-65063e3d31fc",
+      "employee_id": "81ae5a5a-499c-4886-94cc-7ff1b6e46f52",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:23:46.109802"
+    },
+    "907380ac-c0f7-48e4-9cea-9a57c846ffaa": {
+      "doctor_id": "1be889c4-4d23-45f5-a8ae-e7a5f57ff04b",
+      "employee_id": "22ae50e9-6c27-4f71-bbc9-8582229a1586",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:46.142928"
+    },
+    "2070ba50-c76e-46f7-9034-6c2bc8e5c2da": {
+      "doctor_id": "a5041d85-68d7-48ec-b83c-a0a4ecc98d5f",
+      "employee_id": "4c9faa75-5c9c-4be8-9f5a-0124bcd7fb1b",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Clínica",
+      "created_at": "2025-10-03T17:23:46.175632"
+    },
+    "51241522-0bb5-4bee-aace-de8308881a78": {
+      "doctor_id": "739dd377-7045-4ecd-8042-9d056af51d73",
+      "employee_id": "00c6e266-4e19-4ea1-82d0-0cbbf27eeacd",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:23:46.202547"
+    },
+    "6437cf6b-bf7c-4701-acb9-8d6b6ab9f6b2": {
+      "doctor_id": "a5041d85-68d7-48ec-b83c-a0a4ecc98d5f",
+      "employee_id": "fcec0231-82de-4e54-bbc8-86e34a898e37",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Clínica",
+      "created_at": "2025-10-03T17:25:47.867491"
+    },
+    "23300f6b-6268-4b10-b1ab-64027291f657": {
+      "doctor_id": "32282ff9-8d8e-4740-b92b-189dcb419152",
+      "employee_id": "fcec0231-82de-4e54-bbc8-86e34a898e37",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:47.881569"
+    },
+    "058c1e68-ac4e-493d-bdd3-d6948648c09f": {
+      "doctor_id": "5ddedb9d-68fb-4607-a531-a0d5ca92edab",
+      "employee_id": "fcec0231-82de-4e54-bbc8-86e34a898e37",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:47.897271"
+    },
+    "cc84a62f-9e21-4b28-8473-7e246b13ed81": {
+      "doctor_id": "35e5d3e2-5863-4fc0-a126-a510bd45a17e",
+      "employee_id": "fcec0231-82de-4e54-bbc8-86e34a898e37",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Posto",
+      "created_at": "2025-10-03T17:25:47.909874"
+    },
+    "3818a030-f580-49a0-a8a4-44acbfc71ef3": {
+      "doctor_id": "3b9d6018-553d-4f8e-b8ea-bf2ad96a4e5b",
+      "employee_id": "6a335645-0160-46ec-b02d-69cc8409669d",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Posto",
+      "created_at": "2025-10-03T17:25:47.926072"
+    },
+    "ffba2a3c-f64f-43df-a95d-cd2ae9cfa5c8": {
+      "doctor_id": "d3972eae-4342-4766-9699-9293d1f0ee08",
+      "employee_id": "4968bc4b-6878-4b62-9d14-4b7ce7187211",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Clínica (2)",
+      "created_at": "2025-10-03T17:25:47.939604"
+    },
+    "9babd99f-99a8-4593-b299-080253201446": {
+      "doctor_id": "1be889c4-4d23-45f5-a8ae-e7a5f57ff04b",
+      "employee_id": "4968bc4b-6878-4b62-9d14-4b7ce7187211",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Hospital",
+      "created_at": "2025-10-03T17:25:47.953835"
+    },
+    "e2c653c6-ccf9-44dc-a198-b17195cbb889": {
+      "doctor_id": "1be889c4-4d23-45f5-a8ae-e7a5f57ff04b",
+      "employee_id": "ded6553c-d049-4e37-8041-e6fdad851b85",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Hospital",
+      "created_at": "2025-10-03T17:25:47.964141"
+    },
+    "a30c3462-dd39-4de5-9eb3-1a4e40eec9f1": {
+      "doctor_id": "68a23246-8188-472b-97d4-4ed5d5ec49a9",
+      "employee_id": "440f6189-3162-45f2-93a5-4b9de944b5dc",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Santa Casa",
+      "created_at": "2025-10-03T17:25:47.976035"
+    },
+    "dc3a9a82-d1da-433f-98d4-9cf72d7755a1": {
+      "doctor_id": "708a79cb-76f6-435e-9e52-2b29fcafb376",
+      "employee_id": "440f6189-3162-45f2-93a5-4b9de944b5dc",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:47.987246"
+    },
+    "22d75ed1-f654-4140-a8de-5a21f46ce3a6": {
+      "doctor_id": "bf8601fc-6cdd-4003-960e-58a1de2cc4b7",
+      "employee_id": "091d7454-4062-45f2-81ba-abb74e536da3",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:48.000038"
+    },
+    "5c260ac2-9e75-4840-9694-47334d13d53b": {
+      "doctor_id": "739dd377-7045-4ecd-8042-9d056af51d73",
+      "employee_id": "091d7454-4062-45f2-81ba-abb74e536da3",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:48.012952"
+    },
+    "3d3aab4d-0c4f-439f-a620-5b41ecaa7732": {
+      "doctor_id": "506a1b87-0214-43e9-8dae-84b93c176bb2",
+      "employee_id": "091d7454-4062-45f2-81ba-abb74e536da3",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:48.024009"
+    },
+    "dae27d32-e9b7-4523-b8a9-09472194c958": {
+      "doctor_id": "a5041d85-68d7-48ec-b83c-a0a4ecc98d5f",
+      "employee_id": "284f5f38-feae-4d2f-959a-415084de5bb9",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Clínica",
+      "created_at": "2025-10-03T17:25:48.053744"
+    },
+    "37fdf2a7-b1b7-4ded-bc3a-3b8476787bfe": {
+      "doctor_id": "32282ff9-8d8e-4740-b92b-189dcb419152",
+      "employee_id": "3a4cfc60-68e0-457d-a4a1-08235a7a7870",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:48.068437"
+    },
+    "a76b15b7-39cf-4d9a-95f9-86f6926b4495": {
+      "doctor_id": "8ef71303-2af8-431b-8448-6d6f52810c53",
+      "employee_id": "83ff795c-022a-448f-831a-e5b2c4ee7ec8",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.085052"
+    },
+    "fbde5c95-622e-4775-b3f6-c79442beb971": {
+      "doctor_id": "271db541-8edb-43bd-b117-ec537e0e39e1",
+      "employee_id": "3a2c2282-5ddb-4f6a-9a45-3b0f535c437c",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:48.098644"
+    },
+    "94c315c9-07ab-4d36-a5f7-04bab16f24d8": {
+      "doctor_id": "113e09ce-2b9f-45d6-aa42-27d25213e472",
+      "employee_id": "5e726593-98f5-4fc8-8c91-4a71bcd75746",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.111518"
+    },
+    "1a70662c-213c-448f-8b45-0f4503b32fc1": {
+      "doctor_id": "1be889c4-4d23-45f5-a8ae-e7a5f57ff04b",
+      "employee_id": "57fc50f6-2a18-4d13-8876-4bd520ce2bf0",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:48.125711"
+    },
+    "76c96d8f-50ff-4c5e-a844-ce713a3c7e55": {
+      "doctor_id": "31a8635c-630c-4fce-8e3a-052ac8b482e0",
+      "employee_id": "57fc50f6-2a18-4d13-8876-4bd520ce2bf0",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:48.138125"
+    },
+    "7121a492-3dc3-4f92-b30f-e4a8f7be27c7": {
+      "doctor_id": "271db541-8edb-43bd-b117-ec537e0e39e1",
+      "employee_id": "0ffdb66f-37a3-486e-94ba-8a41ce33fd46",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:48.149251"
+    },
+    "5e390568-577c-4a42-94ac-cf753d3eeb78": {
+      "doctor_id": "3dc9ad32-5eb1-41e7-b193-80f476b00c4f",
+      "employee_id": "71aabca2-6366-47d2-96e5-14d567d4fb23",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.161427"
+    },
+    "5080eea6-3425-409a-a7ef-29f784b1e84d": {
+      "doctor_id": "ffe2b497-6d76-41b5-a6cf-234c4287b681",
+      "employee_id": "6bfe60d2-7ef8-4722-87eb-8db332f8ab41",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Clínica",
+      "created_at": "2025-10-03T17:25:48.176160"
+    },
+    "8f7030ae-4b76-4ec0-baea-466886187acb": {
+      "doctor_id": "d2499df2-5ba5-442b-a76d-96ba867eb8ba",
+      "employee_id": "736b7ee1-afbb-4753-bb74-4bb74d588e5b",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.189391"
+    },
+    "8019a937-c85a-4514-82ca-182e9a5ddb1c": {
+      "doctor_id": "bcfe750c-429c-4c3e-9b1f-54119f3a2f22",
+      "employee_id": "04c40ace-5a2a-41e0-b536-d583ea4b6b67",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.201584"
+    },
+    "71c4ca18-e92d-4948-8bca-45b8ddbb6566": {
+      "doctor_id": "07bdbcdf-6a71-4f02-b98c-3ccdf5513399",
+      "employee_id": "3d3c8e02-b305-42c2-b344-7f00d2568c56",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:48.219007"
+    },
+    "771eab47-1eaf-47ec-99e0-faf4a57a61ad": {
+      "doctor_id": "86ff0635-f505-46ed-a48d-a990744d663f",
+      "employee_id": "ec0f6c27-ee3d-4fbc-86e3-6d8501550f09",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.232171"
+    },
+    "127aa831-fcd1-4bc5-9a30-dca989ea3097": {
+      "doctor_id": "113e09ce-2b9f-45d6-aa42-27d25213e472",
+      "employee_id": "ec0f6c27-ee3d-4fbc-86e3-6d8501550f09",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.247755"
+    },
+    "54f4e382-e383-4e33-bf83-bd69b8dfe4e2": {
+      "doctor_id": "6b1cc7bd-d912-4e5e-b73f-3da97c6c5276",
+      "employee_id": "083f99ba-3a55-4a14-a6f3-fe26f16af92b",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Clínica",
+      "created_at": "2025-10-03T17:25:48.262179"
+    },
+    "e7435187-8cdd-40aa-94d7-ab764472b554": {
+      "doctor_id": "8ef71303-2af8-431b-8448-6d6f52810c53",
+      "employee_id": "d3ac6b71-a712-4492-a427-c2ec1e19029d",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Consutório",
+      "created_at": "2025-10-03T17:25:48.273275"
+    },
+    "3a8566b2-c7b4-4ae1-8cd8-d7df28c89726": {
+      "doctor_id": "271db541-8edb-43bd-b117-ec537e0e39e1",
+      "employee_id": "d3ac6b71-a712-4492-a427-c2ec1e19029d",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:48.286907"
+    },
+    "e468cc2d-636e-4b2e-ab92-e94d35ade3dd": {
+      "doctor_id": "3dc9ad32-5eb1-41e7-b193-80f476b00c4f",
+      "employee_id": "0afa8513-734c-46bb-89af-4144c9118cf2",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.300283"
+    },
+    "e464bbe4-3806-4791-af82-016a7cf7611a": {
+      "doctor_id": "3dc9ad32-5eb1-41e7-b193-80f476b00c4f",
+      "employee_id": "9d3df483-39f3-4e50-8f04-c484431f12e4",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.313621"
+    },
+    "9200c8c2-43a6-4eb5-a101-dbe216ccca1c": {
+      "doctor_id": "4a4033cf-34ed-4677-974c-6edaf2fec50b",
+      "employee_id": "e294eb72-94a0-439c-b3ef-8fc7f7982acd",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Unimed",
+      "created_at": "2025-10-03T17:25:48.325500"
+    },
+    "3d8a8e0a-416c-43ab-94d0-3ecb5e89d7dc": {
+      "doctor_id": "8d57dcd8-daf3-4846-8f74-bb84c5f90bc5",
+      "employee_id": "e43b63d0-b7a5-4e06-954b-cc7acbf70c53",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:48.338216"
+    },
+    "f4ef88f1-1df4-4227-98f8-be75fe5a20a3": {
+      "doctor_id": "32282ff9-8d8e-4740-b92b-189dcb419152",
+      "employee_id": "41b29b66-5e4c-48fc-acf9-4fed256c88a5",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:48.352276"
+    },
+    "64946fdf-1559-47be-859f-81765439ad64": {
+      "doctor_id": "fe305b78-efa2-4451-a4ed-f64eabbbd3af",
+      "employee_id": "73449274-e73d-4c97-ac8e-538cfe71bd81",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.366080"
+    },
+    "ccdfc2dd-0bd7-4bba-802f-794465a2c2cf": {
+      "doctor_id": "fe305b78-efa2-4451-a4ed-f64eabbbd3af",
+      "employee_id": "2c00cdf4-d890-450e-a058-e74457663d81",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.379606"
+    },
+    "6d8f023b-2bd4-4455-9efb-804263f1c304": {
+      "doctor_id": "270eca3f-2b53-4e1a-8a9f-d5d950200b6c",
+      "employee_id": "c0175a57-94e5-4f3c-9ea6-d5b4399bccad",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Hospital",
+      "created_at": "2025-10-03T17:25:48.389858"
+    },
+    "ca097646-109f-4208-8e2e-6d4f8a6b8f10": {
+      "doctor_id": "91eea75a-6532-441a-b0d9-bfcc684969d7",
+      "employee_id": "5996a73c-eee5-4f25-b7db-ef6aa6154329",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.405849"
+    },
+    "f21c740d-b6d0-4ea1-8945-348cee485e20": {
+      "doctor_id": "1be889c4-4d23-45f5-a8ae-e7a5f57ff04b",
+      "employee_id": "4e9bbc13-52f2-46cc-b344-71ad04ceef97",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:48.420180"
+    },
+    "42e60cac-92d9-4d2e-b0e8-d3bdc2924572": {
+      "doctor_id": "506a1b87-0214-43e9-8dae-84b93c176bb2",
+      "employee_id": "4a6cf73a-c19d-4643-acb6-ff4403ac0f56",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:48.435875"
+    },
+    "a2b063a8-3e3e-47fd-84fd-2aa89addea4f": {
+      "doctor_id": "a2561759-e872-4a78-bcef-a6205bc1c5f9",
+      "employee_id": "63f991ce-01bc-437b-bb97-eeee431a4af3",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.449435"
+    },
+    "078864a9-050e-4257-b88c-94a35708e669": {
+      "doctor_id": "e03aad43-4ef5-4c79-9347-2eea7807decb",
+      "employee_id": "67c5b980-7b21-4781-aa8c-9bbfa1cabf78",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.467499"
+    },
+    "164a54d5-0f45-4098-a9da-f80b59f5d018": {
+      "doctor_id": "32282ff9-8d8e-4740-b92b-189dcb419152",
+      "employee_id": "f49609ce-e810-4fe5-9528-52061d2decb4",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:48.481063"
+    },
+    "725aa229-ebcf-4ea4-8ead-515539751481": {
+      "doctor_id": "8ef71303-2af8-431b-8448-6d6f52810c53",
+      "employee_id": "010a9c31-ec22-48fc-983a-61167b72ebdd",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.497508"
+    },
+    "17976cd1-592e-45e7-8246-fcfe750392d4": {
+      "doctor_id": "8ef71303-2af8-431b-8448-6d6f52810c53",
+      "employee_id": "010a9c31-ec22-48fc-983a-61167b72ebdd",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.510781"
+    },
+    "671ca715-2686-4bd7-a6c9-1894ab750390": {
+      "doctor_id": "8ef71303-2af8-431b-8448-6d6f52810c53",
+      "employee_id": "010a9c31-ec22-48fc-983a-61167b72ebdd",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.523553"
+    },
+    "bdf558a7-f066-469b-a5cf-6348da903617": {
+      "doctor_id": "4c17b92f-ee2a-4903-9760-f721ecc0d0d7",
+      "employee_id": "62d3aa43-20d6-46c2-95b3-232feff8a6cb",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.537336"
+    },
+    "de95fde7-31d1-4b76-a822-b242b7437d5a": {
+      "doctor_id": "0a1e1551-9438-4f95-86af-271491a7ea0c",
+      "employee_id": "62d3aa43-20d6-46c2-95b3-232feff8a6cb",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:48.550135"
+    },
+    "a0000ab4-8f70-4034-a435-b56443a1816c": {
+      "doctor_id": "1e9562be-97de-46f1-ab61-016d3d280a0e",
+      "employee_id": "62d3aa43-20d6-46c2-95b3-232feff8a6cb",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:48.565559"
+    },
+    "b0cd926a-8ef1-4163-acbe-4e19c30c5104": {
+      "doctor_id": "34a173f4-7ea9-4792-b93e-6cd060e8cd9e",
+      "employee_id": "fee816a8-6fa2-4695-b17e-3a73595b63b3",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Clínicas",
+      "created_at": "2025-10-03T17:25:48.579868"
+    },
+    "2437c3b7-dc52-4c92-80e4-3ff94d6a575a": {
+      "doctor_id": "32282ff9-8d8e-4740-b92b-189dcb419152",
+      "employee_id": "010ddc6b-11e9-4055-aaf8-c42e7d490627",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:48.614884"
+    },
+    "4f0909ea-b831-4579-af4e-a3b5b86ffe9d": {
+      "doctor_id": "113e09ce-2b9f-45d6-aa42-27d25213e472",
+      "employee_id": "d8d31ba5-1985-415e-870a-aaab1afb292b",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.628756"
+    },
+    "f2d588bb-c2c5-42a3-ac6a-d77e11132f79": {
+      "doctor_id": "113e09ce-2b9f-45d6-aa42-27d25213e472",
+      "employee_id": "d8d31ba5-1985-415e-870a-aaab1afb292b",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.645607"
+    },
+    "2194a5ec-ad44-404c-8963-1f21b9099fcf": {
+      "doctor_id": "f3db64be-9d09-4f89-aa76-18ec30dcdbfa",
+      "employee_id": "9badb452-461c-4cff-a4fe-9fd1d3496243",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.660793"
+    },
+    "c3ece8f2-c06f-4707-b319-59e2a82d13c9": {
+      "doctor_id": "113e09ce-2b9f-45d6-aa42-27d25213e472",
+      "employee_id": "30ae475e-6417-4221-a922-dd731ecbbdb0",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.678164"
+    },
+    "24abcfdf-0b93-4f2b-8ed0-897ab898499a": {
+      "doctor_id": "5f480211-fd48-4e02-a053-6a56690db3be",
+      "employee_id": "329cf20d-c23c-4d3a-af3b-be314a922d10",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.694774"
+    },
+    "a063b41b-573a-47c6-b283-1a9716089fc5": {
+      "doctor_id": "a5041d85-68d7-48ec-b83c-a0a4ecc98d5f",
+      "employee_id": "329cf20d-c23c-4d3a-af3b-be314a922d10",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Clínica",
+      "created_at": "2025-10-03T17:25:48.716277"
+    },
+    "e2e3a1e4-1f6a-44b7-9838-51967062202a": {
+      "doctor_id": "b66efca5-097e-4dff-a84d-65063e3d31fc",
+      "employee_id": "81ae5a5a-499c-4886-94cc-7ff1b6e46f52",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: ESF",
+      "created_at": "2025-10-03T17:25:48.733855"
+    },
+    "7a05bd79-752f-4d0f-bed2-90667966b0e7": {
+      "doctor_id": "1be889c4-4d23-45f5-a8ae-e7a5f57ff04b",
+      "employee_id": "22ae50e9-6c27-4f71-bbc9-8582229a1586",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:48.757011"
+    },
+    "d15ef29a-55de-4621-9bf4-9bd1eebb9ebd": {
+      "doctor_id": "a5041d85-68d7-48ec-b83c-a0a4ecc98d5f",
+      "employee_id": "4c9faa75-5c9c-4be8-9f5a-0124bcd7fb1b",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Clínica",
+      "created_at": "2025-10-03T17:25:48.772054"
+    },
+    "9b940497-4dca-4672-9687-e603c68c2220": {
+      "doctor_id": "739dd377-7045-4ecd-8042-9d056af51d73",
+      "employee_id": "00c6e266-4e19-4ea1-82d0-0cbbf27eeacd",
+      "certificate_date": "2025-10-03",
+      "days_off": 1,
+      "diagnosis": "Local: Ceam",
+      "created_at": "2025-10-03T17:25:48.788739"
+    },
+    "3cad5e3f-3020-4ed6-9170-e18ccbadd91c": {
+      "doctor_id": "a5041d85-68d7-48ec-b83c-a0a4ecc98d5f",
+      "employee_id": "fcec0231-82de-4e54-bbc8-86e34a898e37",
+      "certificate_date": "2026-01-28",
+      "days_off": 1,
+      "diagnosis": "",
+      "cid": "Z73.0",
+      "is_psychosocial_risk": true,
+      "risk_detail": "Burnout (Esgotamento Profissional)",
+      "created_at": "2026-01-28T12:21:03.119188"
+    }
+  },
+  "last_update": "2026-01-28T12:21:03.119207"
+}
