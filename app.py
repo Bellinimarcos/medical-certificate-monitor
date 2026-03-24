@@ -23,14 +23,17 @@ class CIDAnalyst:
             'Z56': 'Problemas relacionados ao emprego (Geral)',
             'Z56.3': 'Ritmo de trabalho penoso',
             'Z56.6': 'Dificuldades físicas/mentais relacionadas ao trabalho',
-            'Z60.5': 'Vítima de perseguição/discriminação (Indicativo de Assédio Moral)',
-            'Y07': 'Síndromes de maus tratos (Pode indicar Assédio/Violência)',
-            'T74': 'Síndromes de maus tratos (Abuso Psicológico/Sexual)'
+            'Z60.5': 'Vítima de perseguição/discriminação',
+            'Y07': 'Síndromes de maus tratos',
+            'T74': 'Síndromes de maus tratos'
         }
 
     def reconhecer_cid(self, cid_input: str) -> str:
-        if not cid_input: return ""
+        if not cid_input or pd.isna(cid_input): return ""
         clean = str(cid_input).upper().strip().replace('.', '')
+        if clean == "SEM CID" or clean == "NAN": return ""
+        # Lida com CIDs múltiplos separados por barra ou mais
+        clean = clean.split('/')[0].split('+')[0].strip()
         if len(clean) > 3: return f"{clean[:3]}.{clean[3:]}"
         return clean
 
@@ -44,7 +47,8 @@ class CIDAnalyst:
                     "risco": True,
                     "categoria": "RISCO PSICOSSOCIAL (NR-1)",
                     "detalhe": descricao,
-                    "alerta": f"⚠️ ALERTA NR-1: Este CID indica {descricao}. Recomendado investigar nexo causal ou assédio."
+                    # Sanitização de risco jurídico: Foco preventivo sem nexo causal
+                    "alerta": f"⚠️ ALERTA NR-1: Este CID indica {descricao}. Recomendada avaliação multiprofissional preventiva."
                 }
         return {"risco": False, "msg": "CID sem alerta imediato."}
 
@@ -81,7 +85,6 @@ class MedicalStorage:
         self.save_data()
         return doctor_id
 
-    # Com campo ROLE (Cargo)
     def add_employee(self, registration: str, name: str, department: str = "", role: str = ""):
         for employee_id, employee_data in self.data["employees"].items():
             if employee_data["registration"] == registration: 
@@ -102,7 +105,6 @@ class MedicalStorage:
         self.save_data()
         return employee_id
     
-    # Com campo WORKPLACE (Local)
     def add_certificate(self, doctor_id: str, employee_id: str, certificate_date: str, days_off: int = 0, diagnosis: str = "", cid: str = "", workplace: str = ""):
         certificate_id = str(uuid.uuid4())
         analyst = CIDAnalyst()
@@ -155,7 +157,6 @@ def setup_streamlit_app():
     st.set_page_config(page_title="Gestão de Saúde & Riscos NR-1", page_icon="🏥", layout="wide")
 
 # --- TELAS DO SISTEMA ---
-
 def show_dashboard(storage):
     st.header("📊 Dashboard de Monitoramento")
     stats = storage.get_statistics()
@@ -168,7 +169,7 @@ def show_dashboard(storage):
     
     st.markdown("---")
 
-    st.subheader("🚨 Casos de Risco Psicossocial (Atenção Imediata)")
+    st.subheader("🚨 Casos de Risco Psicossocial (Atenção Preventiva)")
     risks = []
     for cert in storage.data["certificates"].values():
         if cert.get("is_psychosocial_risk"):
@@ -176,7 +177,6 @@ def show_dashboard(storage):
             risks.append({
                 "Data": cert["certificate_date"],
                 "Funcionário": emp.get("name", "Desconhecido"),
-                "Departamento": emp.get("department", "-"),
                 "Cargo": emp.get("role", "-"),
                 "CID": cert.get("cid", ""),
                 "Risco": cert.get("risk_detail", "")
@@ -213,7 +213,7 @@ def show_ai_analysis(storage):
         st.warning("⚠️ Configure a chave API no secrets.toml")
         return
 
-    st.info("A IA analisará os dados com foco nas solicitações do Gestor (Cargos, Locais e CIDs).")
+    st.info("A IA analisará os dados com foco nas solicitações do Gestor (Cargos e CIDs).")
     
     if st.button("🚀 Gerar Relatório Técnico"):
         with st.spinner("Analisando dados..."):
@@ -235,8 +235,11 @@ def show_ai_analysis(storage):
                             cargo = emp.get('role', 'Não Informado')
                             cargos_afastados[cargo] = cargos_afastados.get(cargo, 0) + 1
 
+                # Prompt blindado para não gerar passivo
                 prompt = f"""
                 Atue como Especialista em Saúde Ocupacional. Gere um relatório técnico.
+                
+                DIRETRIZ CRÍTICA: É estritamente proibido mencionar nomes de departamentos, secretarias, locais de trabalho específicos ou estabelecer nexo causal direto. O foco deve ser puramente epidemiológico e na recomendação de ações preventivas globais.
                 
                 DADOS:
                 - Total Atestados: {stats['total_certificates']}
@@ -249,9 +252,9 @@ def show_ai_analysis(storage):
                 {json.dumps(cargos_afastados, ensure_ascii=False)}
                 
                 Gere um relatório focado em:
-                1. Gravidade dos CIDs encontrados.
-                2. Relação entre os Cargos afetados e os riscos.
-                3. Sugestões de mitigação.
+                1. Visão geral da severidade dos CIDs.
+                2. Distribuição epidemiológica por cargos afetados.
+                3. Sugestões de mitigação institucionais e preventivas.
                 """
                 
                 response = model.generate_content(prompt)
@@ -318,37 +321,33 @@ def show_employee_registration(storage):
                 storage.add_employee(reg, name, dept, role)
                 st.success("Funcionário salvo!")
 
-# --- FUNÇÕES DE IMPORTAÇÃO (CORRIGIDAS E COMPLETAS) ---
+# --- FUNÇÕES DE IMPORTAÇÃO ---
 def show_data_import(storage):
     st.header("📁 Importar Cadastros (Carga Inicial)")
     st.info("Use esta tela para cadastrar listas grandes de uma só vez.")
     
     tab1, tab2 = st.tabs(["👥 Importar Funcionários", "👨‍⚕️ Importar Médicos"])
     
-    with tab1:
-        import_employees_ui(storage)
-    
-    with tab2:
-        import_doctors_ui(storage)
+    with tab1: import_employees_ui(storage)
+    with tab2: import_doctors_ui(storage)
 
 def import_employees_ui(storage):
     st.subheader("Lista de Funcionários")
-    st.markdown("O arquivo deve ter: **Matrícula, Nome, Departamento, Cargo**.")
     uploaded_file = st.file_uploader("Solte seu Excel de Funcionários aqui", type=['csv', 'xlsx'], key="emp_up")
     
     if uploaded_file:
         try:
             df = pd.read_csv(uploaded_file) if uploaded_file.name.endswith('.csv') else pd.read_excel(uploaded_file)
-            st.write(f"🔍 Lendo {len(df)} linhas...")
             df.columns = df.columns.str.lower().str.strip()
             
-            col_mat = next((c for c in df.columns if c in ['matricula', 'registration', 'mat', 'id']), None)
-            col_nome = next((c for c in df.columns if c in ['nome', 'name', 'funcionario', 'servidor']), None)
-            col_dept = next((c for c in df.columns if c in ['departamento', 'setor', 'local']), None)
-            col_cargo = next((c for c in df.columns if c in ['cargo', 'funcao', 'role']), None)
+            # Adicionado tratamento de acentos
+            col_mat = next((c for c in df.columns if c in ['matricula', 'matrícula', 'registration', 'mat', 'id']), None)
+            col_nome = next((c for c in df.columns if c in ['nome', 'name', 'funcionario', 'funcionário', 'servidor']), None)
+            col_dept = next((c for c in df.columns if c in ['departamento', 'setor', 'local', 'lotacao', 'lotação']), None)
+            col_cargo = next((c for c in df.columns if c in ['cargo', 'funcao', 'role', 'função']), None)
             
             if not col_mat or not col_nome:
-                st.error("❌ Erro: Precisa de 'Matrícula' e 'Nome'.")
+                st.error("❌ Erro: Precisa de colunas reconhecidas para Matrícula e Nome.")
                 return
 
             if st.button("📥 Confirmar Importação de Funcionários"):
@@ -358,7 +357,7 @@ def import_employees_ui(storage):
                     nome = str(row[col_nome]).strip()
                     dept = str(row[col_dept]).strip() if col_dept and pd.notna(row[col_dept]) else ""
                     cargo = str(row[col_cargo]).strip() if col_cargo and pd.notna(row[col_cargo]) else ""
-                    if mat and nome:
+                    if mat and nome and mat.lower() != "nan" and nome.lower() != "nan":
                         storage.add_employee(mat, nome, dept, role=cargo)
                         count += 1
                 st.success(f"✅ Sucesso! {count} funcionários cadastrados.")
@@ -366,18 +365,16 @@ def import_employees_ui(storage):
 
 def import_doctors_ui(storage):
     st.subheader("Lista de Médicos")
-    st.markdown("O arquivo deve ter: **CRM, Nome, Especialidade**.")
     uploaded_file = st.file_uploader("Solte seu Excel de Médicos aqui", type=['csv', 'xlsx'], key="doc_up")
     
     if uploaded_file:
         try:
             df = pd.read_csv(uploaded_file) if uploaded_file.name.endswith('.csv') else pd.read_excel(uploaded_file)
-            st.write(f"🔍 Lendo {len(df)} linhas...")
             df.columns = df.columns.str.lower().str.strip()
             
             col_crm = next((c for c in df.columns if c in ['crm', 'registro']), None)
-            col_nome = next((c for c in df.columns if c in ['nome', 'name', 'medico']), None)
-            col_spec = next((c for c in df.columns if c in ['especialidade', 'area']), None)
+            col_nome = next((c for c in df.columns if c in ['nome', 'name', 'medico', 'médico']), None)
+            col_spec = next((c for c in df.columns if c in ['especialidade', 'area', 'área']), None)
             
             if not col_crm or not col_nome:
                 st.error("❌ Erro: Precisa de 'CRM' e 'Nome'.")
@@ -389,7 +386,7 @@ def import_doctors_ui(storage):
                     crm = str(row[col_crm]).strip()
                     nome = str(row[col_nome]).strip()
                     spec = str(row[col_spec]).strip() if col_spec and pd.notna(row[col_spec]) else ""
-                    if crm and nome:
+                    if crm and nome and crm.lower() != "nan" and nome.lower() != "nan":
                         storage.add_doctor(crm, nome, spec)
                         count += 1
                 st.success(f"✅ Sucesso! {count} médicos cadastrados.")
@@ -397,33 +394,54 @@ def import_doctors_ui(storage):
 
 def show_complete_report_import(storage):
     st.header("📥 Importar Relatório Completo")
-    st.info("Colunas esperadas: Nome | Matrícula | Cargo | Médico | Local | CID")
+    st.info("Colunas esperadas de forma rígida: Nome | Matrícula | Cargo | Médico | Local | CID")
     
-    uploaded_file = st.file_uploader("Arquivo Excel Completo", type=['xlsx', 'xls'])
+    uploaded_file = st.file_uploader("Arquivo Excel Completo", type=['xlsx', 'xls', 'csv'])
     if uploaded_file and st.button("Processar Importação Completa"):
         try:
-            df = pd.read_excel(uploaded_file, header=None)
-            count = 0
-            for idx, row in df.iterrows():
-                if idx == 0: continue 
+            if uploaded_file.name.endswith('.csv'):
+                df = pd.read_csv(uploaded_file, header=None)
+            else:
+                df = pd.read_excel(uploaded_file, header=None)
                 
-                nome_func = str(row[0]).strip()
-                mat = str(row[1]).strip()
-                cargo = str(row[2]).strip() if pd.notna(row[2]) else ""
-                medico = str(row[3]).strip()
-                local = str(row[4]).strip() if pd.notna(row[4]) else ""
-                cid = str(row[5]).strip() if pd.notna(row[5]) else ""
+            count = 0
+            
+            # Helper seguro para limpar "nan" e dados vazios
+            def safe_str(val):
+                if pd.isna(val): return ""
+                return str(val).strip()
 
-                if mat and nome_func:
-                    emp_id = storage.add_employee(mat, nome_func, "", role=cargo)
-                    crm_match = re.search(r'(\d+)', medico)
-                    crm = crm_match.group(1) if crm_match else "00000"
-                    doc_id = storage.add_doctor(crm, medico)
-                    storage.add_certificate(doc_id, emp_id, datetime.date.today().isoformat(), 1, "", cid, workplace=local)
-                    count += 1
-            st.success(f"✅ {count} registros processados!")
+            for idx, row in df.iterrows():
+                # Garantir que a linha tenha ao menos 6 colunas
+                if len(row) < 6: continue 
+                
+                nome_func = safe_str(row[0])
+                mat = safe_str(row[1])
+                cargo = safe_str(row[2])
+                medico = safe_str(row[3])
+                local = safe_str(row[4])
+                cid = safe_str(row[5])
+
+                # FILTRO CONSERVADOR: Ignora cabeçalhos sujos (ex: "RELATÓRIO...", "MAT.", ou vazios)
+                if not mat or "MAT" in mat.upper() or not re.search(r'\d', mat):
+                    continue
+                    
+                if not nome_func or nome_func.upper() == "NAN":
+                    continue
+
+                emp_id = storage.add_employee(mat, nome_func, "", role=cargo)
+                
+                # Extrai apenas números do CRM
+                crm_match = re.search(r'(\d+)', medico)
+                crm = crm_match.group(1) if crm_match else "00000"
+                doc_id = storage.add_doctor(crm, medico)
+                
+                storage.add_certificate(doc_id, emp_id, datetime.date.today().isoformat(), 1, "", cid, workplace=local)
+                count += 1
+                
+            st.success(f"✅ {count} registros processados e vinculados com sucesso!")
         except Exception as e:
-            st.error(f"Erro na importação: {e}")
+            st.error(f"Erro na importação estrutural: {e}")
 
 def show_backup_management(storage):
     st.header("💾 Exportar Dados (Excel)")
@@ -447,9 +465,9 @@ def show_backup_management(storage):
         output = BytesIO()
         with pd.ExcelWriter(output, engine='openpyxl') as writer:
             df.to_excel(writer, index=False)
-        st.download_button("📥 Download Excel", output.getvalue(), file_name="relatorio_gestor.xlsx")
+        st.download_button("📥 Download Excel", output.getvalue(), file_name="relatorio_estruturado.xlsx")
 
-# --- FUNÇÃO PRINCIPAL (MAIN) ---
+# --- FUNÇÃO PRINCIPAL ---
 def main():
     setup_streamlit_app()
     storage = MedicalStorage()
